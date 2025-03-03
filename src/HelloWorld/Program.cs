@@ -1,9 +1,13 @@
 ﻿namespace HelloWorld;
+using HelloPrint;
 
 class HelloWorld
 {
     public static void Main()
     {
-        Console.WriteLine("Hello, World");
+        var name = Console.ReadLine();
+        HelloPrint print = new();
+        // name ??= "World";
+        print.SayHello(name);
     }
 }
